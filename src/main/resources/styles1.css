@@ -1,0 +1,158 @@
+/* General styling for the body and labels */
+.root {
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-image: url('background.jpg'); /* Replace with your image path */
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+/* Styling for labels */
+.label {
+    -fx-text-fill: #333;
+    -fx-font-size: 16px;
+    -fx-padding: 10 0 5 0;
+}
+
+/* Styling for input fields */
+.input-field {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 40px;
+    -fx-padding: 0 10;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #ccc;
+    -fx-background-color: #fff;
+    -fx-font-size: 14px;
+}
+
+.input-field:focused {
+    -fx-border-color: #5c8dbc;
+    -fx-background-color: #eef6fc;
+}
+
+/* Styling for buttons */
+.button-primary {
+    -fx-background-color: #5c8dbc;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+.button-secondary {
+    -fx-background-color: #ccc;
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+.button-primary:hover {
+    -fx-background-color: #48739e;
+}
+
+.button-secondary:hover {
+    -fx-background-color: #b3b3b3;
+}
+
+/* Styling for VBox layout */
+.login-form {
+    -fx-background-color: #fff;
+    -fx-padding: 20px;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-spacing: 15px;
+}
+
+/* Styling for box layout */
+.box-layout {
+    -fx-background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    -fx-padding: 30px;
+    -fx-border-color: #ddd;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.1, 0, 0);
+
+    /* Reduced width and height */
+    -fx-pref-width: 300px;
+    -fx-pref-height: 300px;
+}
+
+/* Styling for Create Form button */
+#plus-box {
+    -fx-fill: #5c8dbc; /* Background color for the box */
+}
+
+#plus-symbol {
+    -fx-font-size: 36px; /* Size of the plus symbol */
+}
+
+#grid-pane {
+    -fx-alignment: center; /* Center the grid pane */
+    -fx-padding: 20px; /* Add padding */
+}
+
+#form-button-box {
+    -fx-fill: #5c8dbc; /* Background color for form buttons */
+}
+
+
+
+/* Styling for options layout */
+#options-layout {
+    -fx-padding: 20px;
+    -fx-spacing: 10px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    /* Adjust font size and padding for small screens */
+    .root {
+        -fx-font-size: 12px;
+    }
+
+    .input-field, .button-primary, .button-secondary {
+        -fx-pref-width: 100%;
+    }
+}
+
+/* Styling for Back and Logout buttons */
+.button-secondary {
+    -fx-background-color: #ccc;
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+    -fx-pref-width: 100px; /* Width of the buttons */
+    -fx-pref-height: 40px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+/* styles1.css */
+#button-layout {
+    -fx-background-color: transparent; /* Set background color */
+}
+
+#logout-button, #back-button {
+    -fx-background-color: #4CAF50; /* Green */
+    -fx-text-fill: white; /* White text */
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px; /* Add padding */
+    -fx-border-radius: 5; /* Round corners */
+}
+
+#logout-button:hover, #back-button:hover {
+    -fx-background-color: #45a049; /* Darker green on hover */
+}
+
+
+.button-secondary:hover {
+    -fx-background-color: #b3b3b3;
+}
